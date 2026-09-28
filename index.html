@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#030b1f">
+<title>AXION PROEDUQ · Tecnologia que move a educação</title>
+<meta name="description" content="AXION PROEDUQ: o grupo de tecnologia educacional nascido na sala de aula. Conheça o RELATORIO SKIN, a Biblioteca Digital, o Conex-ED e as próximas plataformas de apoio à educação.">
+<link rel="canonical" href="https://axionproeduq.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://axionproeduq.com.br/">
+<meta property="og:title" content="AXION PROEDUQ · Tecnologia que move a educação">
+<meta property="og:description" content="Plataformas digitais que aproximam professores, alunos e famílias.">
+<meta property="og:image" content="https://axionproeduq.com.br/assets/img/og-axion.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/axion-escuro.webp">
+<link rel="stylesheet" href="assets/css/site.css?v=1">
+<script>document.documentElement.classList.add("js");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"AXION PROEDUQ","url":"https://axionproeduq.com.br/","logo":"https://axionproeduq.com.br/assets/img/axion-icone.webp","slogan":"Tecnologia que move a educação.","address":{"@type":"PostalAddress","addressLocality":"Senador Guiomard","addressRegion":"AC","addressCountry":"BR"},"sameAs":["https://relatorio.skin/","https://biblioteca-ac.com/"]}
+</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Abertura: o X se monta -->
+<div class="intro" id="intro" aria-hidden="true">
+  <svg class="intro-ax" viewBox="140 340 940 580">
+    <defs>
+      <linearGradient id="gi1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b6bff"/><stop offset="1" stop-color="#00c8f5"/></linearGradient>
+      <linearGradient id="gi2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a4df0"/><stop offset="1" stop-color="#00b4f0"/></linearGradient>
+      <linearGradient id="gi3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00a8f5"/><stop offset="1" stop-color="#00f0ff"/></linearGradient>
+    </defs>
+    <path class="p pa" fill="#eef3ff" d="M170 842 L400 472 L488 472 L612 664 L540 746 L440 606 L272 842 Z"/>
+    <path class="p p1" fill="url(#gi1)" d="M488 372 L650 372 L852 632 L680 632 Z"/>
+    <path class="p p2" fill="url(#gi3)" d="M905 368 L1052 368 L852 612 L770 512 Z"/>
+    <path class="p p3" fill="url(#gi2)" d="M680 638 L850 638 L620 890 L452 890 Z"/>
+    <path class="p p4" fill="url(#gi3)" d="M764 742 L852 642 L1040 890 L868 890 Z"/>
+  </svg>
+  <div class="intro-txt">AXION <b>PROEDUQ</b></div>
+</div>
+
+<div class="progresso" id="progresso"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><i></i><span></span></div>
+
+<header class="topo" id="topo">
+  <div class="wrap topo-in">
+    <a class="topo-logo" href="#inicio" aria-label="AXION PROEDUQ, início">
+      <img src="assets/img/axion-escuro-sm.webp" alt="AXION PROEDUQ" width="151" height="40">
+    </a>
+    <nav class="menu" id="menu" aria-label="Seções">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#plataformas">Plataformas</a>
+      <a href="#ecossistema">Ecossistema</a>
+      <a href="#principios">Princípios</a>
+      <a href="#rumo">Rumo</a>
+      <a href="#marca">Marca</a>
+      <a class="menu-cta" href="#contato">Fale conosco</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ═════════ HERO ═════════ -->
+<section class="hero" id="inicio">
+  <canvas class="rede" id="rede" aria-hidden="true"></canvas>
+  <div class="hero-brilho" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <span class="selo-vivo"><i></i> Grupo de tecnologia educacional · Acre, Brasil</span>
+      <h1 class="hero-titulo">
+        <span class="linha"><span class="sobe">Tecnologia que</span></span>
+        <span class="linha"><span class="sobe"><span class="troca" id="troca" aria-live="polite">move</span></span></span>
+        <span class="linha"><span class="sobe">a educação<b class="ponto">.</b></span></span>
+      </h1>
+      <p class="hero-lead">Criamos plataformas digitais que aproximam professores, alunos e famílias, organizam o dia a dia da escola e transformam registros de aula em aprendizagem que se acompanha, se mede e se celebra.</p>
+      <div class="hero-acoes">
+        <a class="btn btn-pri magnetico" href="#plataformas"><span>Conheça as plataformas</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-sec magnetico" href="#quem-somos"><span>Nossa história</span></a>
+      </div>
+      <ul class="hero-plats" aria-label="Plataformas do grupo">
+        <li><img src="assets/img/skin-icone.webp" alt="" width="40" height="40"><span>RELATORIO SKIN</span></li>
+        <li><img src="assets/img/plataforma-biblioteca.webp" alt="" width="40" height="40"><span>Biblioteca Digital</span></li>
+        <li class="breve"><img src="assets/img/conex-ed-icone.webp" alt="" width="40" height="40"><span>Conex-ED <em>em breve</em></span></li>
+      </ul>
+    </div>
+
+    <div class="hero-marca" id="heroMarca">
+      <div class="orbita o1" aria-hidden="true"><i></i></div>
+      <div class="orbita o2" aria-hidden="true"><i></i></div>
+      <div class="orbita o3" aria-hidden="true"><i></i></div>
+      <svg class="ax" id="ax" viewBox="140 340 940 580" role="img" aria-label="Símbolo AX da AXION PROEDUQ">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b6bff"/><stop offset="1" stop-color="#00c8f5"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a4df0"/><stop offset="1" stop-color="#00b4f0"/></linearGradient>
+          <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00a8f5"/><stop offset="1" stop-color="#00f0ff"/></linearGradient>
+          <linearGradient id="gA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9d0ff"/></linearGradient>
+          <filter id="brilhoX" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <g filter="url(#brilhoX)">
+          <path class="pc pa" fill="url(#gA)" d="M170 842 L400 472 L488 472 L612 664 L540 746 L440 606 L272 842 Z"/>
+          <path class="pc p1" fill="url(#g1)" d="M488 372 L650 372 L852 632 L680 632 Z"/>
+          <path class="pc p2" fill="url(#g3)" d="M905 368 L1052 368 L852 612 L770 512 Z"/>
+          <path class="pc p3" fill="url(#g2)" d="M680 638 L850 638 L620 890 L452 890 Z"/>
+          <path class="pc p4" fill="url(#g3)" d="M764 742 L852 642 L1040 890 L868 890 Z"/>
+        </g>
+      </svg>
+      <div class="flutua f1"><b>2</b> plataformas em uso</div>
+      <div class="flutua f2"><b>26</b> ferramentas de I.A.</div>
+      <div class="flutua f3"><b>LGPD</b> privacidade por padrão</div>
+    </div>
+  </div>
+  <a class="rolar" href="#quem-somos" aria-label="Rolar para a próxima seção"><span></span></a>
+</section>
+
+<!-- Faixa de palavras -->
+<div class="faixa" aria-hidden="true">
+  <div class="faixa-trilho">
+    <span>Diário digital</span><i>✦</i><span>Biblioteca offline</span><i>✦</i><span>I.A. pedagógica</span><i>✦</i><span>Privacidade LGPD</span><i>✦</i><span>Gestão escolar</span><i>✦</i><span>Ranking de Poder</span><i>✦</i><span>Relatório individual</span><i>✦</i><span>Educação inclusiva</span><i>✦</i><span>Feito na escola pública</span><i>✦</i>
+    <span>Diário digital</span><i>✦</i><span>Biblioteca offline</span><i>✦</i><span>I.A. pedagógica</span><i>✦</i><span>Privacidade LGPD</span><i>✦</i><span>Gestão escolar</span><i>✦</i><span>Ranking de Poder</span><i>✦</i><span>Relatório individual</span><i>✦</i><span>Educação inclusiva</span><i>✦</i><span>Feito na escola pública</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ═════════ QUEM SOMOS ═════════ -->
+<section class="secao" id="quem-somos">
+  <div class="wrap quem">
+    <div class="revela">
+      <span class="rotulo">Quem somos</span>
+      <h2>Nascemos dentro da <span class="grad">sala de aula</span></h2>
+      <p>A <strong>AXION PROEDUQ</strong> reúne as tecnologias educacionais criadas pelo professor <strong>Paulo Roberto Ramalho Magalhães</strong>, em Senador Guiomard, no Acre. Cada ferramenta surgiu de uma necessidade real da escola: registrar aulas com cuidado, acompanhar cada aluno de perto e oferecer leitura e estudo de qualidade, inclusive onde a internet é instável.</p>
+      <p>Hoje o grupo abriga plataformas que trabalham juntas e é a casa dos próximos projetos que vierem para somar à educação.</p>
+      <div class="assinatura"><img src="assets/img/axion-icone.webp" alt="" width="44" height="44"><span>Do quadro-negro ao código, <b>sem perder o olhar de professor.</b></span></div>
+    </div>
+    <div class="numeros revela">
+      <div class="numero inclina"><div class="num"><span data-conta="2">0</span></div><span>plataformas integradas em uso</span></div>
+      <div class="numero inclina"><div class="num"><span data-conta="26">0</span></div><span>ferramentas de I.A. para o professor</span></div>
+      <div class="numero inclina"><div class="num"><span data-conta="100">0</span>%</div><span>gratuito para os alunos</span></div>
+      <div class="numero inclina"><div class="num"><span data-conta="2026" data-sem-milhar>0</span></div><span>ano de fundação da marca</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PROPÓSITO ═════════ -->
+<section class="secao alt" id="proposito">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <span class="rotulo">Propósito</span>
+      <h2>Por que existimos</h2>
+      <p class="intro-sec">Três ideias guiam tudo o que construímos. Passe o mouse (ou toque) para virar cada cartão.</p>
+    </div>
+    <div class="virar-grade revela">
+      <button class="virar" type="button" aria-pressed="false">
+        <span class="virar-in">
+          <span class="frente"><span class="big">01</span><b>Missão</b><em>toque para ver</em></span>
+          <span class="verso">Colocar tecnologia simples, segura e acessível a serviço do ensino, para que o professor ensine melhor e o aluno aprenda mais.</span>
+        </span>
+      </button>
+      <button class="virar" type="button" aria-pressed="false">
+        <span class="virar-in">
+          <span class="frente"><span class="big">02</span><b>Visão</b><em>toque para ver</em></span>
+          <span class="verso">Ser referência em tecnologia educacional feita a partir da escola pública, reconhecida pela utilidade no dia a dia e pelo respeito aos dados de cada aluno.</span>
+        </span>
+      </button>
+      <button class="virar" type="button" aria-pressed="false">
+        <span class="virar-in">
+          <span class="frente"><span class="big">03</span><b>Compromisso</b><em>toque para ver</em></span>
+          <span class="verso">Cada funcionalidade precisa resolver um problema real da sala de aula. Se não ajuda o professor ou o aluno, não entra.</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PLATAFORMAS ═════════ -->
+<section class="secao" id="plataformas">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <span class="rotulo">Plataformas</span>
+      <h2>Um ecossistema que <span class="grad">não para de crescer</span></h2>
+      <p class="intro-sec">Cada plataforma resolve uma parte da vida escolar. Juntas, elas cobrem o caminho inteiro: do registro da aula ao estudo do aluno e à gestão da escola.</p>
+    </div>
+
+    <div class="plats revela" id="plats">
+      <div class="plats-lista" role="tablist" aria-label="Escolha uma plataforma">
+        <button class="plat-aba on" role="tab" aria-selected="true" aria-controls="pp-skin" id="pa-skin" data-cor="#a7b58a" data-cor2="#d6cbb8">
+          <img src="assets/img/skin-icone.webp" alt="" width="48" height="48">
+          <span><b>RELATORIO SKIN</b><small>Gestão docente inteligente</small></span>
+          <em class="st on">em uso</em>
+        </button>
+        <button class="plat-aba" role="tab" aria-selected="false" aria-controls="pp-bib" id="pa-bib" data-cor="#a77bff" data-cor2="#e3b25a">
+          <img src="assets/img/plataforma-biblioteca.webp" alt="" width="48" height="48">
+          <span><b>Biblioteca Digital</b><small>Acervo e jornada do aluno</small></span>
+          <em class="st on">em uso</em>
+        </button>
+        <button class="plat-aba" role="tab" aria-selected="false" aria-controls="pp-conex" id="pa-conex" data-cor="#00d4ff" data-cor2="#0b6bff">
+          <img src="assets/img/conex-ed-icone.webp" alt="" width="48" height="48">
+          <span><b>Conex-ED</b><small>Toda a escola conectada</small></span>
+          <em class="st breve">em breve</em>
+        </button>
+        <button class="plat-aba" role="tab" aria-selected="false" aria-controls="pp-prox" id="pa-prox" data-cor="#4f8dff" data-cor2="#00b8f0">
+          <span class="mais" aria-hidden="true">+</span>
+          <span><b>Próximas plataformas</b><small>Novas ideias a caminho</small></span>
+          <em class="st futuro">em estudo</em>
+        </button>
+      </div>
+
+      <div class="plats-palco" id="palco">
+        <div class="palco-luz" aria-hidden="true"></div>
+
+        <article class="plat-painel on" role="tabpanel" id="pp-skin" aria-labelledby="pa-skin">
+          <div class="pp-logo claro"><img src="assets/img/skin-marca.webp" alt="RELATORIO SKIN, gestão docente inteligente" width="1100" height="552" loading="lazy"></div>
+          <p class="pp-resumo">O diário digital do professor. Relatos de aula, frequência, atividades, conduta e notas de cada turma num só lugar, com cálculos automáticos, histórico permanente e um assistente de I.A. que trabalha junto.</p>
+          <div class="pp-cols">
+            <div><h4>Para quem</h4><div class="chips"><span>Professores</span><span>Coordenação</span><span>Educação Especial</span></div></div>
+            <div><h4>Endereço</h4><a class="dominio" href="https://relatorio.skin/" rel="noopener">relatorio.skin ↗</a></div>
+          </div>
+          <ul class="pp-lista">
+            <li>Diário com I.A.: o rascunho do professor vira relato organizado.</li>
+            <li>Chamada em um toque, contador de h/aula e bimestres pela soma real de aulas.</li>
+            <li>26 ferramentas de I.A.: planos, sequências, provas e relatórios.</li>
+            <li>Frequência Diária e Relatório Individual prontos para imprimir.</li>
+            <li>Painel AEE para mediadores e professores do atendimento especializado.</li>
+          </ul>
+          <a class="btn btn-pri magnetico" href="https://relatorio.skin/" rel="noopener"><span>Acessar o RELATORIO SKIN</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </article>
+
+        <article class="plat-painel" role="tabpanel" id="pp-bib" aria-labelledby="pa-bib" hidden>
+          <div class="pp-logo bib"><img src="assets/img/plataforma-biblioteca.webp" alt="Biblioteca Digital" width="288" height="288" loading="lazy"><div><b>Biblioteca Digital</b><span>Leitura, avaliação e aventura</span></div></div>
+          <p class="pp-resumo">O acervo digital do aluno, com estética medieval. Livros de cada série, disciplina e bimestre, avaliações, jogos e um ranking que transforma o estudo numa jornada.</p>
+          <div class="pp-cols">
+            <div><h4>Para quem</h4><div class="chips"><span>Alunos</span><span>Professores</span><span>Famílias</span></div></div>
+            <div><h4>Endereço</h4><a class="dominio" href="https://biblioteca-ac.com/" rel="noopener">biblioteca-ac.com ↗</a></div>
+          </div>
+          <ul class="pp-lista">
+            <li>Livros digitais por série, disciplina e bimestre, também sem internet.</li>
+            <li>Avaliação bimestral com login, que entra direto na nota do diário.</li>
+            <li>Ranking de Poder: níveis de Novato a Mago Supremo, com bônus na média.</li>
+            <li>Jogos educativos e aplicativo Android para estudar offline.</li>
+            <li>Boletim e relatório anual do próprio aluno, sempre atualizados.</li>
+          </ul>
+          <a class="btn btn-pri magnetico" href="https://biblioteca-ac.com/" rel="noopener"><span>Acessar a Biblioteca</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </article>
+
+        <article class="plat-painel" role="tabpanel" id="pp-conex" aria-labelledby="pa-conex" hidden>
+          <div class="pp-logo claro"><img src="assets/img/conex-ed-logo.webp" alt="Conex-ED, toda a escola conectada" width="1100" height="367" loading="lazy"></div>
+          <p class="pp-resumo">A plataforma de gestão escolar do grupo. A escola cadastra turmas e alunos uma vez, e cada professor, mediador e família recebe o que precisa, no lugar certo e com segurança.</p>
+          <div class="pp-cols">
+            <div><h4>Para quem</h4><div class="chips"><span>Gestão escolar</span><span>Secretaria</span><span>Redes de ensino</span></div></div>
+            <div><h4>Situação</h4><span class="dominio breve"><i></i> em desenvolvimento</span></div>
+          </div>
+          <ul class="pp-lista">
+            <li>Cadastro único de alunos e turmas, ligado ao código INEP da escola.</li>
+            <li>Turmas e alunos entregues direto ao diário de cada professor.</li>
+            <li>Código do aluno para compartilhar o acompanhamento da Educação Especial.</li>
+            <li>Visão da escola inteira: frequência, notas e alertas de quem precisa de apoio.</li>
+          </ul>
+          <a class="btn btn-pri magnetico" href="#contato"><span>Quero ser avisado</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="plat-painel" role="tabpanel" id="pp-prox" aria-labelledby="pa-prox" hidden>
+          <div class="pp-logo prox"><span class="slot"><i>+</i></span><div><b>O próximo espaço é seu</b><span>Novas plataformas de apoio educacional</span></div></div>
+          <p class="pp-resumo">A AXION PROEDUQ foi criada para abrigar as próximas ideias. Toda nova plataforma nasce de uma necessidade observada em sala e chega aqui assim que estiver pronta para as escolas.</p>
+          <div class="ideias">
+            <span>Reforço e recomposição</span><span>Comunicação com a família</span><span>Planejamento coletivo</span><span>Formação de professores</span><span>Avaliações em larga escala</span><span>Sua sugestão?</span>
+          </div>
+          <a class="btn btn-pri magnetico" href="#contato"><span>Sugerir uma plataforma</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ ECOSSISTEMA ═════════ -->
+<section class="secao alt" id="ecossistema">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <span class="rotulo">Ecossistema</span>
+      <h2>Como as plataformas <span class="grad">conversam</span></h2>
+      <p class="intro-sec">Um banco de dados protegido no centro, e cada informação seguindo o caminho certo. Passe o mouse sobre um fluxo para ver por onde ele passa.</p>
+    </div>
+    <div class="eco revela">
+      <div class="eco-mapa">
+        <svg id="ecoSvg" viewBox="0 0 720 460" role="img" aria-label="O RELATORIO SKIN e a Biblioteca Digital trocam dados pelo banco protegido; o Conex-ED se conectará em breve.">
+          <defs>
+            <linearGradient id="gEco" x1="0" x2="1"><stop offset="0" stop-color="#0b4df0"/><stop offset="1" stop-color="#00b8f0"/></linearGradient>
+            <radialGradient id="gNucleo"><stop offset="0" stop-color="#1a7cf5" stop-opacity=".55"/><stop offset="1" stop-color="#1a7cf5" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle cx="360" cy="200" r="150" fill="url(#gNucleo)"/>
+          <path class="via" data-fluxo="1" id="v1" d="M150 110 C 250 110, 270 180, 330 190"/>
+          <path class="via" data-fluxo="2" id="v2" d="M150 140 C 240 160, 270 215, 330 212"/>
+          <path class="via" data-fluxo="3" id="v3" d="M390 190 C 450 180, 470 110, 570 110"/>
+          <path class="via" data-fluxo="4" id="v4" d="M390 212 C 460 215, 480 160, 570 140"/>
+          <path class="via futura" data-fluxo="5" id="v5" d="M360 240 C 360 300, 360 320, 360 350"/>
+          <g class="pacotes">
+            <circle r="5" class="pk" data-fluxo="1"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#v1"/></animateMotion></circle>
+            <circle r="5" class="pk" data-fluxo="2"><animateMotion dur="3.1s" begin="-1s" repeatCount="indefinite"><mpath href="#v2"/></animateMotion></circle>
+            <circle r="5" class="pk c" data-fluxo="3"><animateMotion dur="2.8s" keyPoints="1;0" keyTimes="0;1" calcMode="linear" repeatCount="indefinite"><mpath href="#v3"/></animateMotion></circle>
+            <circle r="5" class="pk c" data-fluxo="4"><animateMotion dur="3.3s" begin="-.6s" repeatCount="indefinite"><mpath href="#v4"/></animateMotion></circle>
+            <circle r="4" class="pk f" data-fluxo="5"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#v5"/></animateMotion></circle>
+          </g>
+          <g class="no-eco" transform="translate(40 80)"><rect width="120" height="92" rx="18"/><image href="assets/img/skin-icone.webp" x="36" y="10" width="48" height="48"/><text x="60" y="78">RELATORIO SKIN</text></g>
+          <g class="no-eco centro" transform="translate(300 160)"><rect width="120" height="80" rx="40"/><text x="60" y="37">Banco</text><text x="60" y="55" class="s">protegido</text></g>
+          <g class="no-eco" transform="translate(560 80)"><rect width="120" height="92" rx="18"/><image href="assets/img/plataforma-biblioteca.webp" x="36" y="10" width="48" height="48"/><text x="60" y="78">Biblioteca</text></g>
+          <g class="no-eco futuro" transform="translate(300 350)"><rect width="120" height="92" rx="18"/><image href="assets/img/conex-ed-icone.webp" x="36" y="10" width="48" height="48"/><text x="60" y="78">Conex-ED</text></g>
+        </svg>
+      </div>
+      <ol class="eco-fluxos">
+        <li data-fluxo="1" tabindex="0"><b>Frequência e atividades</b> do diário viram a nota de trabalho do aluno.</li>
+        <li data-fluxo="2" tabindex="0"><b>Observações de conduta</b> aparecem no relatório e no boletim, com regras combinadas.</li>
+        <li data-fluxo="3" tabindex="0"><b>A prova feita no livro digital</b> vira a nota de prova do bimestre no diário.</li>
+        <li data-fluxo="4" tabindex="0"><b>O aluno vê o próprio boletim</b> e o relatório anual, sempre atualizados.</li>
+        <li data-fluxo="5" tabindex="0" class="futuro"><b>Em breve:</b> o Conex-ED entrega turmas e alunos da escola direto a cada plataforma.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PRINCÍPIOS ═════════ -->
+<section class="secao" id="principios">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <span class="rotulo">Princípios</span>
+      <h2>Como trabalhamos</h2>
+      <p class="intro-sec">Os princípios que orientam cada decisão, do desenho de uma tela à forma de guardar uma nota.</p>
+    </div>
+    <div class="grade g3 revela-grupo">
+      <div class="cartao luz inclina">
+        <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
+        <h3>O aluno no centro</h3>
+        <p>Toda ferramenta existe para a aprendizagem: acompanhar o progresso, reconhecer o esforço e agir cedo quando algo não vai bem.</p>
+      </div>
+      <div class="cartao luz inclina">
+        <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h3>O professor decide</h3>
+        <p>A inteligência artificial organiza e sugere. A decisão pedagógica final, sobre nota, conduta ou conteúdo, é sempre do professor.</p>
+      </div>
+      <div class="cartao luz inclina">
+        <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>Privacidade por padrão</h3>
+        <p>Cada pessoa vê apenas o que é dela. Nomes de alunos viram códigos antes de irem para a I.A., e seguimos a LGPD.</p>
+      </div>
+      <div class="cartao luz inclina">
+        <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+        <h3>Nada se perde</h3>
+        <p>O histórico escolar é patrimônio do aluno. Os registros ficam guardados por ano letivo, com cada alteração datada e recuperável.</p>
+      </div>
+      <div class="cartao luz inclina">
+        <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <h3>Acesso para todos</h3>
+        <p>Funciona no celular, instala como aplicativo e continua útil sem internet. A realidade da escola rural faz parte do projeto.</p>
+      </div>
+      <div class="cartao luz inclina">
+        <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
+        <h3>Melhoria contínua</h3>
+        <p>As plataformas evoluem toda semana, a partir do uso real em sala. O retorno de professores e alunos vira funcionalidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ VALORES (órbita) ═════════ -->
+<section class="secao alt" id="valores">
+  <div class="wrap valores">
+    <div class="revela">
+      <span class="rotulo">Valores</span>
+      <h2>O que <span class="grad">não negociamos</span></h2>
+      <p class="intro-sec">Seis valores giram em torno de tudo o que fazemos. Escolha um.</p>
+      <div class="valor-caixa" id="valorCaixa" aria-live="polite">
+        <b id="valorNome">Ética</b>
+        <p id="valorTexto">Dados de alunos só servem à vida escolar deles. Nunca para publicidade.</p>
+      </div>
+    </div>
+    <div class="orbe revela" id="orbe">
+      <div class="orbe-anel" aria-hidden="true"></div>
+      <div class="orbe-anel a2" aria-hidden="true"></div>
+      <img class="orbe-centro" src="assets/img/axion-icone.webp" alt="" width="140" height="140">
+      <button class="planeta on" type="button" data-txt="Dados de alunos só servem à vida escolar deles. Nunca para publicidade.">Ética</button>
+      <button class="planeta" type="button" data-txt="Regras claras sobre como as notas são calculadas e como os dados são usados.">Transparência</button>
+      <button class="planeta" type="button" data-txt="Menos cliques, menos telas, mais tempo para ensinar.">Simplicidade</button>
+      <button class="planeta" type="button" data-txt="Tecnologia que respeita o currículo, o bimestre e o jeito de avaliar da escola.">Rigor pedagógico</button>
+      <button class="planeta" type="button" data-txt="Leve, acessível e pensado para quem tem pouco sinal e aparelho simples.">Inclusão</button>
+      <button class="planeta" type="button" data-txt="Cuidar do registro de cada aluno como cuidamos de um documento oficial.">Responsabilidade</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ RUMO / OBJETIVOS ═════════ -->
+<section class="secao" id="rumo">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <span class="rotulo">Rumo</span>
+      <h2>Aonde queremos chegar</h2>
+      <p class="intro-sec">Metas que orientam o crescimento da AXION PROEDUQ e das plataformas que ela abriga.</p>
+    </div>
+    <div class="trilha" id="trilha">
+      <div class="trilha-linha" aria-hidden="true"><i id="trilhaFill"></i></div>
+      <div class="marco"><span class="bola">01</span><div class="marco-card"><h3>Devolver tempo ao professor</h3><p>Automatizar o que é repetitivo, como cálculos, contagens e relatórios, para sobrar mais tempo para ensinar.</p></div></div>
+      <div class="marco"><span class="bola">02</span><div class="marco-card"><h3>Acompanhar cada aluno de perto</h3><p>Transformar registros diários em sinais claros de quem precisa de apoio, a tempo de agir.</p></div></div>
+      <div class="marco"><span class="bola">03</span><div class="marco-card"><h3>Levar o estudo a qualquer lugar</h3><p>Material de qualidade no celular, com ou sem internet, para escolas urbanas e rurais.</p></div></div>
+      <div class="marco"><span class="bola">04</span><div class="marco-card"><h3>Aproximar escola e família</h3><p>Boletins e relatórios que o aluno e o responsável entendem e acessam quando quiserem.</p></div></div>
+      <div class="marco"><span class="bola">05</span><div class="marco-card"><h3>Conectar a escola inteira</h3><p>Com o Conex-ED, gestão, professores e famílias trabalhando sobre os mesmos dados, com segurança.</p></div></div>
+      <div class="marco"><span class="bola">06</span><div class="marco-card"><h3>Inovar a partir da escola</h3><p>Criar novos projetos sempre a partir de necessidades reais observadas em sala de aula.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ MARCA ═════════ -->
+<section class="secao alt" id="marca">
+  <div class="wrap">
+    <div class="marca-top">
+      <div class="revela">
+        <span class="rotulo">A marca</span>
+        <h2>Caminhos que <span class="grad">se encontram</span></h2>
+        <p class="intro-sec">O “X” é formado por setas que se cruzam: ensino e tecnologia avançando juntos, na mesma direção. Passe o mouse no símbolo para abri-lo.</p>
+      </div>
+      <div class="x-explica revela" id="xExplica" tabindex="0" aria-label="Símbolo X: ensino e tecnologia">
+        <svg viewBox="440 340 640 580" aria-hidden="true">
+          <path class="xa x1" fill="url(#g1)" d="M488 372 L650 372 L852 632 L680 632 Z"/>
+          <path class="xa x2" fill="url(#g3)" d="M905 368 L1052 368 L852 612 L770 512 Z"/>
+          <path class="xa x3" fill="url(#g2)" d="M680 638 L850 638 L620 890 L452 890 Z"/>
+          <path class="xa x4" fill="url(#g3)" d="M764 742 L852 642 L1040 890 L868 890 Z"/>
+        </svg>
+        <span class="xl l1">Ensino</span><span class="xl l2">Tecnologia</span>
+      </div>
+    </div>
+    <div class="marca-kit revela">
+      <figure>
+        <div class="marca-painel escuro"><img src="assets/img/axion-escuro.webp" alt="Logo AXION PROEDUQ para fundo escuro" width="1400" height="371" loading="lazy"></div>
+        <figcaption>Para fundo escuro</figcaption>
+      </figure>
+      <figure>
+        <div class="marca-painel claro"><img src="assets/img/axion-claro.webp" alt="Logo AXION PROEDUQ para fundo claro" width="1400" height="263" loading="lazy"></div>
+        <figcaption>Para fundo claro</figcaption>
+      </figure>
+    </div>
+    <div class="paleta revela" aria-label="Cores da marca (clique para copiar)">
+      <button type="button" class="cor" data-hex="#030B1F"><i style="background:#030b1f"></i><span>Azul-noite<code>#030B1F</code></span></button>
+      <button type="button" class="cor" data-hex="#0B4DF0"><i style="background:#0b4df0"></i><span>Azul AXION<code>#0B4DF0</code></span></button>
+      <button type="button" class="cor" data-hex="#00B8F0"><i style="background:#00b8f0"></i><span>Ciano<code>#00B8F0</code></span></button>
+      <button type="button" class="cor" data-hex="#FFFFFF"><i style="background:#ffffff"></i><span>Branco<code>#FFFFFF</code></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CONTATO ═════════ -->
+<section class="secao contato" id="contato">
+  <div class="wrap">
+    <div class="contato-card revela">
+      <div class="contato-fundo" aria-hidden="true"></div>
+      <span class="rotulo claro">Vamos conversar</span>
+      <h2>Sua escola quer <span class="grad">caminhar junto?</span></h2>
+      <p>Escolas, redes de ensino, professores e parceiros: fale com a AXION PROEDUQ para conhecer as plataformas, sugerir uma ideia ou acompanhar o lançamento do Conex-ED.</p>
+      <div class="contato-acoes">
+        <a class="btn btn-pri btn-grande magnetico" href="mailto:10pauloacre@gmail.com?subject=AXION%20PROEDUQ"><span>Enviar e-mail</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></a>
+        <button class="btn btn-sec copiar" type="button" data-copia="10pauloacre@gmail.com"><span>Copiar endereço</span></button>
+      </div>
+      <p class="contato-local">📍 Senador Guiomard · Acre · Brasil</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-topo">
+      <div class="rodape-marca">
+        <img src="assets/img/axion-escuro-sm.webp" alt="AXION PROEDUQ. Tecnologia que move a educação." width="240" height="64" loading="lazy">
+        <p>Tecnologia educacional feita a partir da escola pública.</p>
+      </div>
+      <div>
+        <h4>Plataformas</h4>
+        <ul>
+          <li><a href="https://relatorio.skin/" rel="noopener">RELATORIO SKIN</a></li>
+          <li><a href="https://biblioteca-ac.com/" rel="noopener">Biblioteca Digital</a></li>
+          <li><span class="apagado">Conex-ED (em breve)</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Privacidade</h4>
+        <ul>
+          <li><a href="https://relatorio.skin/privacidade.html" rel="noopener">Política do RELATORIO SKIN</a></li>
+          <li><a href="https://relatorio.skin/termos.html" rel="noopener">Termos do RELATORIO SKIN</a></li>
+          <li><a href="https://biblioteca-ac.com/politica-de-privacidade.html" rel="noopener">Política da Biblioteca</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:10pauloacre@gmail.com">10pauloacre@gmail.com</a></li>
+          <li>Senador Guiomard · Acre</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape-base">
+      <span>© <span id="ano">2026</span> AXION PROEDUQ. Todos os direitos reservados.</span>
+      <span class="maiusc">Tecnologia que move a educação</span>
+    </div>
+  </div>
+</footer>
+
+<button class="topo-btn" id="topoBtn" type="button" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script src="assets/js/site.js?v=1" defer></script>
+</body>
+</html>

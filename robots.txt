@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://axionproeduq.com.br/sitemap.xml
